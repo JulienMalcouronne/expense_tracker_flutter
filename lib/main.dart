@@ -19,8 +19,23 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Expense App'),
       ),
-      body: Center(
-        child: Text('Widget Playground!'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Container(
+            width: double.infinity,
+            child: Card(
+              child: Text('Chart!'),
+              color: Colors.blue,
+              elevation: 5,
+            ),
+          ),
+          Card(
+            color: Colors.red,
+            child: Text('List of TX'),
+          )
+        ],
       ),
     );
   }
